@@ -4,7 +4,7 @@ import Leftcontent from "../components/section2/leftcontent.jsx";
 import Rightcontent from "../components/section2/rightcontent.jsx";
 import "../styles/home.module.css";
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <Header/>
@@ -17,4 +17,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home;
