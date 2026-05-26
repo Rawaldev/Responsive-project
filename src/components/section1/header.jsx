@@ -1,5 +1,5 @@
-
-const header = () => {
+import "../../styles/header.module.css";
+const Header = () => {
   return (
     <div>
       
@@ -7,4 +7,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header;

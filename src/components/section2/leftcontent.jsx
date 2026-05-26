@@ -1,5 +1,5 @@
-
-const leftcontent = () => {
+import "../../styles/leftcontent.module.css";
+const Leftcontent = () => {
   return (
     <div>
       
@@ -7,4 +7,4 @@ const leftcontent = () => {
   )
 }
 
-export default leftcontent
+export default Leftcontent

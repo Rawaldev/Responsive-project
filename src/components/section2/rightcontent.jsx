@@ -1,5 +1,5 @@
-
-const rightcontent = () => {
+import "../../styles/rightcontent.module.css";
+const Rightcontent = () => {
   return (
     <div>
       
@@ -7,4 +7,4 @@ const rightcontent = () => {
   )
 }
 
-export default rightcontent
+export default Rightcontent
