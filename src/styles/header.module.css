@@ -8,12 +8,12 @@
 .main{
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(10px,27vw,200px);
+    gap: clamp(5px,33%,200px);
 }
 .left{
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(10px,27vw,10px);
+    gap: clamp(5px,15vw,10px);
     padding-left: 10px;
 }
 .left img{
@@ -23,7 +23,7 @@
 .mid{
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(10px,27vw,16px);
+    gap: clamp(5px,15vw,16px);
     margin-top: 6px;
     font-weight: 700;
 }
@@ -37,7 +37,7 @@
 .right{
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(10px,27vw,20px);
+    gap: clamp(5px,27vw,20px);
 }
 .right button{
     background-color: black;
