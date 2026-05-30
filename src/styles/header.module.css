@@ -16,14 +16,13 @@
     padding-left: 10px;
 }
 .left img{
-    height: 25px;
-    padding-top: 20px;
+    height: 30px;
+    margin-top: -5px;
 }
 .mid{
     display: flex;
     flex-wrap: wrap;
     gap: clamp(5px,15vw,16px);
-    margin-top: 6px;
     font-weight: 700;
 }
 .dot{
@@ -31,7 +30,7 @@
     height: 0px;
     border-radius: 100%;
     background-color: black;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 .right{
     display: flex;
@@ -44,8 +43,7 @@
     border-radius: 40px;
     border: none;
     padding: 0px 15px 0px 15px;
-    height: 40px;
-    margin-top: 15px;
     font-size: 12px;
+    margin-top: -5px;
 }
 
