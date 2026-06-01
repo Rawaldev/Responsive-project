@@ -1,0 +1,69 @@
+.main{
+    height: 90vh;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 3rem 3rem 3rem 5rem;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img{
+    height:100% !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+hr{
+    width: 24rem;
+    height: 1px;
+    opacity: 0.1;
+}
+.topcontant{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2px,20vw,10px);
+}
+.topimg{
+    height: 32px;
+    width: 32px;
+}
+h1{
+    font-size: 7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+.mid{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.midflex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.midgap{
+    margin-left: 2rem;
+}
+.buttom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.buttom button{
+    background: orangered;
+    border: none;
+    border-radius: 50px;
+    padding: 2px 8px 2px 8px;
+}
+.buttom p{
+    text-decoration: underline;
+}
+.lucideicon{
+    margin-top: 0.5rem;
+    margin-left: -45px !important;
+}
