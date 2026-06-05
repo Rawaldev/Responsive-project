@@ -1,0 +1,16 @@
+.footerflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 1rem 0rem 0rem 2rem;
+}
+.footerflex img{
+    height: 5rem;
+    width: 7rem;
+    object-fit: contain;
+}
+.whitetoblack{
+    filter: brightness(0);
+}
