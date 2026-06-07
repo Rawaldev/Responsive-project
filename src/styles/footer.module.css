@@ -3,14 +3,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-    margin: 1rem 0rem 0rem 2rem;
+
+    gap: clamp(4rem,10vw,11rem );
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    width: 100%;
 }
 .footerflex img{
-    height: 5rem;
-    width: 7rem;
+    width:clamp(80px,10vw,140px);
+    height: auto;
     object-fit: contain;
 }
 .whitetoblack{
     filter: brightness(0);
+}
+
+@media(max-width: 768px) {
+    .footerflex{
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    .footerflex img{
+        width: 55px;
+    }
 }
