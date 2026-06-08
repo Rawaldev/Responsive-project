@@ -1,46 +1,81 @@
 .main{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 1vw ,90px);
     margin-top: 26px;
     display: flex;
-    margin-left: 3.5%;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: clamp(5px,33%,200px);
+    padding:0 3.5% ;
 }
 .left{
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(5px,15vw,10px);
-    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .left img{
-    height: 30px;
-    margin-top: -5px;
+    display: block;
+    max-width: 100%;
+    width: clamp(2px,6vw,30px);
+    height: auto;
 }
 .mid{
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(5px,15vw,16px);
-    font-weight: 700;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
 }
 .dot{
     width: 4px;
     height: 4px;
-    border-radius: 100%;
-    background-color: black;
-    margin-top: 15px;
+    border-radius: 50%;
+    background: black;
 }
 .right{
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(5px,27vw,20px);
+    align-items: center;
+    gap: 10px;
 }
 .right button{
     background-color: black;
     color: white;
     border-radius: 40px;
     border: none;
-    padding: 0px 15px 0px 15px;
+    padding: 8px 16px;
     font-size: 12px;
-    margin-top: -5px;
 }
 
+@media (max-width: 900px) {
+    .mid {
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .right button {
+        padding: 6px 12px;
+    }
+}
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mid {
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: center;
+    }
+    .right button{
+        padding:4px 8px ;
+    }
+}
