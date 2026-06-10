@@ -1,0 +1,30 @@
+.footerflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: clamp(4rem,10vw,11rem );
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    width: 100%;
+}
+.footerflex img{
+    width:clamp(80px,10vw,140px);
+    height: auto;
+    object-fit: contain;
+}
+.whitetoblack{
+    filter: brightness(0);
+}
+
+@media(max-width: 768px) {
+    .footerflex{
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    .footerflex img{
+        width: 55px;
+    }
+}

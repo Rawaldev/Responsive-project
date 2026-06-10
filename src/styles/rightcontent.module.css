@@ -1,0 +1,114 @@
+.backimg{
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    height: 25rem;
+    width: 35rem;
+    opacity: 0.1;
+    position: relative;
+}
+.cirimg{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9.9rem;
+    position: absolute;
+    margin-top: -24rem;
+    gap: 10px;
+}
+.avatar{
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover; 
+}
+.avatar:not(:first-child){
+    margin-left: -19px;
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border:4px solid var(--primary-color);
+}
+
+/* section2  */
+.sec2btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 8.5rem;
+    margin-top: -17rem;
+}
+.sec2btn button{
+    border: none;
+    border-radius: 15px;
+    width: 5.5rem;
+    height: 1.5rem;
+    background-color: orangered;
+    position: relative;
+}
+.colorbtn{
+    background-color: rgb(63, 62, 62) !important;
+    color: white;
+}
+.dot{
+    display: inline-block;
+    height: 0.4rem;
+    width: 0.4rem;
+    background: black;
+    border: none;
+    border-radius: 50%;
+}
+
+/* section3 */
+.sec3input{
+    height: 8rem;
+    width: 21rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 7rem;
+    margin-top: 14px;
+    padding: 5px;
+    background: white;
+    position: relative;
+}
+.sec3btn{
+    display: flex;
+    gap: 10px;
+    margin-left: 8rem;
+    margin-top: -3rem;
+    position: relative;
+}
+.sec3btn button{
+    padding: 0.5rem 0 0.5rem 0;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 50px;
+    font-size:medium;
+    width: 9rem;
+}
+.sec3stackoverflow{
+    height: 20px;
+    width: 20px;
+}
+/* section 4 */
+.companyimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-top: 2rem;
+}
+.companyimgframe{
+    height: 60px;
+    width: 60px;
+}
+.companyimgframe img{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 50%;
+    object-fit: cover;
+}

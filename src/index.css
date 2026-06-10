@@ -12,18 +12,18 @@ body{
 }
 /* Root Variables (Professional) */
 :root{
-  --primary-color: #ff6600;
+  --primary-color: rgb(19, 19, 19);
   --secondary-color: #111;
   --text-color: white;
 }
-Global Typography
+/* Global Typography */
 h1,h2,h3,h4,h5,h6{
   font-weight: 700;
 }
 p{
   line-height: 1.6;
 }
-Reusable Utility Classes
+/* Reusable Utility Classes */
 .container{
   width: 90%;
   max-width: 1200px;
@@ -33,11 +33,11 @@ Reusable Utility Classes
   display: flex;
 }
 /* Image Defaults */
-img{
+/* img{
   max-width: 100%;
   display: block;
-}
-Anchor Tag Styling
+} */
+/* Anchor Tag Styling */
 a{
   text-decoration: none;
   color: inherit;
