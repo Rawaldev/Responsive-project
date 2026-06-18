@@ -1,69 +1,136 @@
 .main{
-    height: 90vh;
+    min-height: 90vh;
     width: 50%;
-    color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 3rem 3rem 3rem 5rem;
+    color: #fff;
+
+    padding: clamp(1rem,4vw,3rem);
+
 }
+
+hr{
+    max-width: 24rem;
+    height: 1px;
+    opacity: 0.1;
+}
+/* top section 1*/
+.topcontant{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.topimg{
+    height: clamp(1rem,2.5vw,2rem);
+    width: auto;
+}
+.topcontant h5 {
+    font-size: clamp(0.5rem,1vw,2rem);
+}
+.topcontant p {
+    font-size: clamp(0.5rem,1vw,2rem);
+}
+h1{
+    font-size: clamp(3rem,8vw,8rem);
+    line-height: 0.95;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+/* mid section 2 */
+.mid{
+    margin: 1rem 0;
+}
+.mid p {
+    font-size: clamp(0.85rem,1.2vw,1rem);
+    line-height: 1.6;}
+.midflex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
 .avatar{
-    height: 50px;
-    width: 50px;
+    height: clamp(1rem,2.5vw,5rem);
+    width: clamp(1rem,2.5vw,5rem);
     border-radius: 50%;
-    overflow: hidden;
 }
 .avatar img{
     height:100% !important;
     width: 100% !important;
     object-fit: cover;
 }
-hr{
-    width: 24rem;
-    height: 1px;
-    opacity: 0.1;
-}
-.topcontant{
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(2px,20vw,10px);
-}
-.topimg{
-    height: 32px;
-    width: 32px;
-}
-h1{
-    font-size: 7rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 1rem;
-}
-.mid{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.midflex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-.midgap{
-    margin-left: 2rem;
-}
+/* bottom section 3 */
 .buttom{
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+    align-items: center;
+    gap: 1rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 .buttom button{
     background: orangered;
     border: none;
     border-radius: 50px;
-    padding: 2px 8px 2px 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: clamp(0.8rem,1vw,1rem);
+    cursor: pointer;
 }
 .buttom p{
     text-decoration: underline;
+    font-size: clamp(0.8rem,1vw,1rem);
+}
+.btm2{
+    display: flex;
+    gap: 3rem;
 }
 .lucideicon{
     margin-top: 0.5rem;
-    margin-left: -45px !important;
+}
+
+@media (max-width: 768px){
+
+    .main{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    h1{
+        font-size: clamp(3rem,12vw,5rem);
+    }
+
+    .buttom{
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .main{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .midflex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttom button{
+        width: 100%;
+    }
+
+    hr{
+        max-width: 100%;
+    }
 }
