@@ -26,8 +26,15 @@ const Leftcontent = () => {
       {/* section 3 */}
       <div className={style.buttom}>
         <button>Download-it's Free</button>
-        <p>Our Pricing </p>
-        <ArrowUpRight size={14} className={style.lucideicon}/>
+        <div className={style.btm2}>
+          <div>
+            <p>Our Pricing </p>
+          </div>
+          <div>
+            <ArrowUpRight size={14} className={style.lucideicon}/>
+          </div>
+        </div>
+        
       </div>
     </div>
   )
