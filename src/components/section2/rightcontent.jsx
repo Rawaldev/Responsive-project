@@ -3,7 +3,7 @@ import boxes from "../../assets/rightcontent.png";
 import {Sparkles} from 'lucide-react';
 const Rightcontent = () => {
   return (
-    <div>
+    <div className={style.rightcontainer}>
       <img src={boxes} className={style.backimg}/>
       {/* section 1 */}
       <div className={style.cirimg}>
@@ -34,7 +34,7 @@ const Rightcontent = () => {
         <input type="text" placeholder="How can I help? Please explain" className={style.sec3input}/>
         <div className={style.sec3btn}>
           <button><img src="https://img.icons8.com/ios_filled/1200/stackoverflow.jpg" className={style.sec3stackoverflow}/>Model Training</button>
-          <button><Sparkles size={15}/>Automation</button>
+          <button><Sparkles size={35}/>Automation</button>
         </div>
       </div>
       {/* section 4 */}
