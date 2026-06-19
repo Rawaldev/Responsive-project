@@ -1,11 +1,30 @@
 .midcontant{
-    min-height:40vh;
-    max-height: 90vh;
+    min-height: 40vh;
     background: black;
     border-radius: 20px;
-    margin: 0px 13px;
+    margin: 28px 13px 0;
     overflow: hidden;
-    margin-top: 28px;
+
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Desktop */
+.midcontant > *{
+    flex: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .midcontant{
+        flex-direction: column;
+        min-height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+    .midcontant{
+        padding: 1rem;
+    }
 }
