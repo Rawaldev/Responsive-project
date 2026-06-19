@@ -1,19 +1,18 @@
 .rightcontainer{
-    position: relative;
+ position: relative;
+    flex: 1;
+    min-width: 0;
     width: 100%;
     max-width: 600px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 auto;
 }
 .backimg{
     width: 100%;
     max-width: 35rem;
     height: auto;
-
     opacity: 0.08;
     display: block;
 }
@@ -44,7 +43,6 @@
     border: 4px solid var(--primary-color);
     object-fit: cover;
 }
-
 /* section2  */
 .sec2btn{
     position: absolute;
@@ -136,7 +134,7 @@
 @media (max-width:768px){
 
     .rightcontainer{
-        max-width:100%;
+       display: none;    
     }
     .cirimg{
         top:6%;
