@@ -1,114 +1,183 @@
-.backimg{
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
-    height: 25rem;
-    width: 35rem;
-    opacity: 0.1;
+.rightcontainer{
     position: relative;
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+.backimg{
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+
+    opacity: 0.08;
+    display: block;
+}
+.backimg img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .cirimg{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 9.9rem;
     position: absolute;
-    margin-top: -24rem;
-    gap: 10px;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
 }
 .avatar{
-    height: 5rem;
-    width: 5rem;
-    object-fit: cover; 
+    width: clamp(3rem,7vw,5rem);
+    height: clamp(3rem,7vw,5rem);
 }
 .avatar:not(:first-child){
-    margin-left: -19px;
+    margin-left: -1rem;
 }
 .avatar img{
+     width: 100%;
     height: 100%;
-    width: 100%;
     border-radius: 50%;
-    border:4px solid var(--primary-color);
+    border: 4px solid var(--primary-color);
+    object-fit: cover;
 }
 
 /* section2  */
 .sec2btn{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 8.5rem;
-    margin-top: -17rem;
+    gap: 0.5rem;
 }
 .sec2btn button{
-    border: none;
-    border-radius: 15px;
-    width: 5.5rem;
-    height: 1.5rem;
-    background-color: orangered;
-    position: relative;
+    border:none;
+    border-radius:999px;
+    padding:0.6rem 1rem;
+    min-width:5.5rem;
+    font-size:0.8rem;
 }
 .colorbtn{
-    background-color: rgb(63, 62, 62) !important;
+    background: rgb(63, 62, 62) !important;
     color: white;
 }
 .dot{
     display: inline-block;
-    height: 0.4rem;
     width: 0.4rem;
-    background: black;
-    border: none;
+    height: 0.4rem;
     border-radius: 50%;
+    background: black;
 }
 
 /* section3 */
+.sec3{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translateX(-50%);
+}
 .sec3input{
-    height: 8rem;
-    width: 21rem;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    margin-left: 7rem;
-    margin-top: 14px;
-    padding: 5px;
-    background: white;
-    position: relative;
+    width:min(90vw,22rem);
+    height:8rem;
+    border:none;
+    border-radius:12px;
+    padding:1rem;
 }
 .sec3btn{
-    display: flex;
-    gap: 10px;
-    margin-left: 8rem;
-    margin-top: -3rem;
-    position: relative;
+    position:absolute;
+    bottom:0.10rem;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:1rem;
 }
 .sec3btn button{
-    padding: 0.5rem 0 0.5rem 0;
-    border: 1px solid rgb(183, 183, 183);
-    border-radius: 50px;
-    font-size:medium;
-    width: 9rem;
+    display:flex;
+    align-items:center;
+    gap:0.4rem;
+    padding:0.4rem 1rem;
+    border-radius:999px;
+    min-width: 7rem;
+    max-width: 25rem;
+    border: 1px solid rgb(160, 158, 158);
 }
 .sec3stackoverflow{
-    height: 20px;
     width: 20px;
+    height: 20px;
 }
 /* section 4 */
 .companyimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    margin-top: 2rem;
+    position:absolute;
+    bottom:12%;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:1rem;
 }
 .companyimgframe{
-    height: 60px;
-    width: 60px;
+    width:60px;
+    height:60px;
 }
 .companyimgframe img{
-    height: 100%;
     width: 100%;
-    padding: 1rem;
+    height: 100%;
+    padding: 0.8rem;
     background: black;
     border: 1px solid gray;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+
+@media (max-width:768px){
+
+    .rightcontainer{
+        max-width:100%;
+    }
+    .cirimg{
+        top:6%;
+    }
+    .sec2btn{
+        top:22%;
+    }
+    .sec3{
+        top:35%;
+        width:90%;
+    }
+    .companyimg{
+        gap:0.5rem;
+    }
+    button{
+        font-size:small;
+    }
+}
+
+@media (max-width:480px){
+
+    .avatar{
+        width:3rem;
+        height:3rem;
+    }
+    .sec2btn{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .sec3btn{
+        flex-direction:column;
+        width:100%;
+    }
+    .sec3btn button{
+        width:100%;
+    }
+    .companyimgframe{
+        width:45px;
+        height:45px;
+    }
+    button{
+        font-size: smaller;
+    }
 }
